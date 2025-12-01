@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Jo - Portfolio</title>
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+<style>
+/* ====== CARD FOTO PORTFOLIO ====== */
+#portfolio .portfolio-item {
+    min-height: 420px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+#portfolio .portfolio-item img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    transition: .4s;
+}
+#portfolio .portfolio-item:hover img{
+    transform:scale(1.06);
+    filter:brightness(90%);
+}
+
+/* ====== CARD KHUSUS VIDEO ====== */
+#video-portfolio .video-card {
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    min-height: 420px;
+    transition: .3s;
+}
+#video-portfolio .video-card iframe {
+    width: 100%;
+    height: 240px;
+    border-radius: 10px 10px 0 0;
+    transition: .4s;
+}
+#video-portfolio .video-card:hover iframe{
+    transform: scale(1.04);
+    filter: brightness(90%);
+}
+</style>
+</head>
+
+<body>
+
+<header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Joooo</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home<br></a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="porto.html" class="active">Portofolio</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+<!-- ================= F O T O  P O R T F O L I O ================= -->
+<section id="portfolio" class="container py-5">
+  <h2 class="text-center mb-4">Foto Portofolio</h2>
+
+  <div class="row gy-4">
+    <div class="col-lg-4 col-md-6 portfolio-item">
+      <img src="assets/img/no1.jpg">
+      <div class="p-3">
+        <h4>FiveLive 2024 Thelematofia</h4>
+        <p>Opener   Bernadya,&nbsp;Adikara, MALIQ&amp;D'ESSENTIALS , The Sigit,&nbsp; Rossa, TRIAD &amp; The&nbsp; Changcuters</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 portfolio-item">
+      <img src="assets/img/porto4.jpg">
+      <div class="p-3">
+        <h4>Atma Asta 2024 Kainova&nbsp;</h4>
+        <p>Opener Juicy Luicy,&nbsp; Raisa, Tulus, Parade Hujan,&nbsp; &nbsp; Pamungkas, Hivi, The Panturas &amp; Club Dangdut Racun&nbsp; &nbsp;&nbsp;</p>
+      </div>
+    </div>
+	  
+	  <div class="col-lg-4 col-md-6 portfolio-item">
+      <img src="assets/img/artefak.png">
+      <div class="p-3">
+        <h4>Artefax 2024 Arcadia</h4>
+        <p>Opener Yovie &amp; Nuno, Aldi Taher &amp; The Panturas&nbsp; &nbsp;</p>
+      </div>
+    </div>
+	  
+	  <div class="col-lg-4 col-md-6 portfolio-item">
+      <img src="assets/img/dio.png">
+      <div class="p-3">
+        <h4>Dioerama 2024&nbsp;</h4>
+        <p>Event Unpar at Ciwalk&nbsp;</p>
+      </div>
+    </div>
+	  
+	  <div class="col-lg-4 col-md-6 portfolio-item">
+      <img src="assets/img/summa.png">
+      <div class="p-3">
+        <h4>Festival Kuliner Bandung 2025</h4>
+        <p>Summarecon Mall Bandung</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 portfolio-item">
+      <img src="assets/img/unpad2.jpg">
+      <div class="p-3">
+        <h4>Blazture 2025</h4>
+        <p>Opener Lomba Sihir, Yovie &amp; Nuno &amp; The Panturas&nbsp;&nbsp;</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ================= V I D E O  P O R T F O L I O ================= -->
+<section id="video-portfolio" class="container py-5">
+  <h2 class="text-center mb-4">Video Portofolio</h2>
+
+  <div class="row justify-content-center gy-4">
+    <div class="col-lg-4 col-md-6">
+      <div class="video-card text-center">
+
+        <!-- === EMBED VIDEO TIKTOK === -->
+        <blockquote class="tiktok-embed"
+          cite="https://www.tiktok.com/@masbrooowc/video/7578583933244230933"
+          data-video-id="7578583933244230933"
+          style="max-width:400px; margin:auto;">
+          <section>
+            <a href="https://www.tiktok.com/@masbrooowc/video/7578583933244230933"></a>
+          </section>
+        </blockquote>
+        <script async src="https://www.tiktok.com/embed.js"></script>
+
+        <div class="p-3">
+          <p>Presentasi project dalam bentuk video (TikTok).</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<footer class="footer text-center p-3">
+  © 2025 Jo — All Rights Reserved
+</footer>
+
+</body>
+</html>
